@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raj Marketing - Connecting Textile Manufacturers and Retailers Since 1997</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 20px 0;
+            border-bottom: #e8491d 3px solid;
+        }
+        header .logo {
+            float: left;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            color: #ffffff;
+        }
+        header .logo span {
+            color: #e8491d;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header nav ul {
+            padding: 0;
+        }
+        header nav li {
+            display: inline;
+            padding: 0 20px;
+        }
+        header nav a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        #showcase {
+            position: relative;
+            height: 600px;
+            overflow: hidden;
+        }
+        .slider {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 600%;
+            height: 100%;
+            animation: slide 36s infinite;
+        }
+        .slider-section {
+            width: 16.666%;
+            height: 100%;
+            float: left;
+            position: relative;
+            overflow: hidden;
+        }
+        .slider-section img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        @keyframes slide {
+            0% { left: 0; }
+            16% { left: 0; }
+            20% { left: -100%; }
+            36% { left: -100%; }
+            40% { left: -200%; }
+            56% { left: -200%; }
+            60% { left: -300%; }
+            76% { left: -300%; }
+            80% { left: -400%; }
+            96% { left: -400%; }
+            100% { left: -500%; }
+        }
+        .showcase-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #ffffff;
+            z-index: 1;
+            width: 80%;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .showcase-content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+        .showcase-content p {
+            font-size: 20px;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+        }
+        .btn {
+            display: inline-block;
+            background: #e8491d;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        #stats {
+            padding: 30px 0;
+            text-align: center;
+            background: #35424a;
+            color: #ffffff;
+        }
+        #stats .stat {
+            display: inline-block;
+            width: 30%;
+            padding: 20px;
+        }
+        #stats .stat-number {
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        #about, #services, #products {
+            padding: 40px 0;
+        }
+        #services .service, #products .product {
+            float: left;
+            width: 23%;
+            padding: 10px;
+            text-align: center;
+            background: #fff;
+            margin: 1%;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        #services .service img, #products .product img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        #contact form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        #contact form input, #contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        #contact form button {
+            background: #e8491d;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        footer {
+            background: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                Raj Marketing <span>|</span> Raj Agency
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#products">PRODUCTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="showcase">
+        <div class="slider">
+            <div class="slider-section">
+                <img src="weavers.jpg" alt="Weavers">
+            </div>
+            <div class="slider-section">
+                <img src="istockphoto-2149654221-1024x1024.jpg" alt="Textile Image 1">
+            </div>
+            <div class="slider-section">
+                <img src="istockphoto-171296094-1024x1024.jpg" alt="Textile Image 2">
+            </div>
+            <div class="slider-section">
+                <img src="istockphoto-504825106-1024x1024.jpg" alt="Textile Image 3">
+            </div>
+            <div class="slider-section">
+                <img src="istockphoto-682909464-1024x1024.jpg" alt="Textile Image 4">
+            </div>
+            <div class="slider-section">
+                <img src="istockphoto-1156277101-1024x1024.jpg" alt="Textile Image 5">
+            </div>
+        </div>
+        <div class="showcase-content">
+            <h1>Connecting Textile Manufacturers and Retailers Since 1997</h1>
+            <p>Your trusted partner in South India's textile industry</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <section id="stats">
+        <div class="container">
+          <div class="stat-card">
+            <i class="fas fa-store"></i>
+            <span class="stat-number" data-target="50">0</span>+
+            <p>Retail Customers</p>
+          </div>
+          <div class="stat-card">
+            <i class="fas fa-industry"></i>
+            <span class="stat-number" data-target="70">0</span>+
+            <p>Textile Manufacturers</p>
+          </div>
+          <div class="stat-card">
+            <i class="fas fa-award"></i>
+            <span class="stat-number" data-target="25">0</span>+
+            <p>Years of Excellence</p>
+          </div>
+        </div>
+      </section>
+      
+
+    <section id="about">
+        <div class="container">
+            <h2>About Raj Marketing</h2>
+            <p>Founded in 1997 by Pawan Joshi, Raj Marketing has been a pivotal force in connecting textile manufacturers with leading retailers across South India. With over two decades of experience, we've built strong relationships with both manufacturers and retailers, ensuring smooth and efficient transactions.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service">
+                <img src="connecting-partners.jpg" alt="Connecting Partners">
+                <h3>Connecting Partners</h3>
+                <p>We bridge the gap between manufacturers and retailers, facilitating profitable partnerships.</p>
+            </div>
+            <div class="service">
+                <img src="market-insights.jpg" alt="Market Insights">
+                <h3>Market Insights</h3>
+                <p>Stay ahead with our in-depth analysis of the latest textile market trends.</p>
+            </div>
+            <div class="service">
+                <img src="logistics-support.jpg" alt="Logistics Support">
+                <h3>Logistics Support</h3>
+                <p>We ensure smooth and timely delivery of products from manufacturers to retailers.</p>
+            </div>
+            <div class="service">
+                <img src="quality-assurance.jpg" alt="Quality Assurance">
+                <h3>Quality Assurance</h3>
+                <p>Our team ensures that all products meet the highest quality standards.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="products">
+        <div class="container">
+            <h2>Featured Products</h2>
+            <div class="product">
+                <img src="kalamkari.jpg" alt="Kalamkari Fabrics">
+                <h3>Kalamkari Fabrics</h3>
+                <p>Traditional hand-painted or block-printed cotton textiles.</p>
+            </div>
+            <div class="product">
+                <img src="ikkat.jpg" alt="Ikkat Weaves">
+                <h3>Ikkat Weaves</h3>
+                <p>Unique dyed and woven fabrics with intricate patterns.</p>
+            </div>
+            <div class="product">
+                <img src="handloom.jpg" alt="Handloom Fabrics">
+                <h3>Handloom Fabrics</h3>
+                <p>Exquisite hand-woven textiles showcasing artisanal skills.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Raj Marketing. All rights reserved.</p>
+            <p>123 Textile Street, Chennai, Tamil Nadu, India</p>
+            <p>+91 123 456 7890 | info@rajmarketing.com</p>
+        </div>
+    </footer>
+</body>
+</html>
